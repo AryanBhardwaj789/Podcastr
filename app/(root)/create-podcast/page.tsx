@@ -74,7 +74,7 @@ const CreatePodcast = () => {
 
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="mt-12 flex w-full flex-col">
-          <div className="flex flex-col gap-30 border-b border-black-5 pb-10">
+          <div className="flex flex-col gap-[30px] border-b border-black-5 pb-10">
             <FormField
               control={form.control}
               name="podcastTitle"
@@ -128,17 +128,23 @@ const CreatePodcast = () => {
             />
           </div>
           <div className="flex flex-col pt-10">
-            <GeneratePodcast 
-            setAudioStorageId={setAudioStorageId}
-            setAudio={setAudioUrl}
-            voiceType={voiceType}
-            audio={audioUrl}
-            voicePrompt={voicePrompt}
-            setVoicePrompt={setVoicePrompt}
-            setAudioDuration={setAudioDuration} 
+            <GeneratePodcast
+              setAudioStorageId={setAudioStorageId}
+              setAudio={setAudioUrl}
+              voiceType={voiceType!}
+              audio={audioUrl}
+              voicePrompt={voicePrompt}
+              setVoicePrompt={setVoicePrompt}
+              setAudioDuration={setAudioDuration}
             />
 
-            <GenerateThumbnail />
+            <GenerateThumbnail
+              image={imageUrl}
+              imagePrompt={imagePrompt}
+              setImage={setImageUrl}
+              setImageStorageId={setImageStorageId}
+              setImagePrompt={setImagePrompt}
+            />
 
 
             <div className="mt-10 w-full">

@@ -9,6 +9,10 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'lovely-flamingo-139.convex.cloud'
       },
+      {
+        protocol: 'https',
+        hostname: 'earnest-jay-755.convex.cloud'
+      }
     ]
   }
 };
