@@ -16,7 +16,7 @@ const PodcastCard = ({
     }
 
     return (
-        <div className='cursor-pointer' onClick={handleViews}>PodcastCard
+        <div className='cursor-pointer' onClick={handleViews}>
         <figure className='flex flex-col gap-2'>
             <Image
             src={imgUrl}

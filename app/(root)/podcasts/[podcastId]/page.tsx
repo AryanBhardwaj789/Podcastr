@@ -33,7 +33,7 @@ const PodcastDetails = ({ params: { podcastId } }: { params: { podcastId: Id<'po
 
       <PodcastDetailPlayer 
         isOwner={isOwner}
-        podcastid={podcast._id}
+        podcastId={podcast._id}
         {...podcast}
       />
 
@@ -60,7 +60,7 @@ const PodcastDetails = ({ params: { podcastId } }: { params: { podcastId: Id<'po
             {similarPodcasts?.map(({ _id, podcastTitle, podcastDescription, imageUrl }) => (
               <PodcastCard
                 key={_id}
-                imgUrl={imageUrl}
+                imgUrl={imageUrl as string}
                 title={podcastTitle}
                 description={podcastDescription}
                 podcastId={_id}

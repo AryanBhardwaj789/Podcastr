@@ -13,7 +13,7 @@ import { useToast } from "@/hooks/use-toast";
 import LoaderSpinner from "./LoaderSpinner";
 
 const PodcastDetailPlayer = ({
-    audioUrl,
+    // audioUrl,
     podcastTitle,
     author,
     imageUrl,
