@@ -6,6 +6,7 @@
     "@typescript-eslint/no-non-null-asserted-optional-chain": "warn",
     "@typescript-eslint/no-explicit-any": "warn",
     "react/no-unescaped-entities": "warn",
-    "@typescript-eslint/no-empty-interface": "warn"
+    "@typescript-eslint/no-empty-interface": "warn",
+    "@typescript-eslint/no-empty-object-type": "warn"
   }
 }
