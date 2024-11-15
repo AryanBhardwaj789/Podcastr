@@ -3,6 +3,7 @@ import { Manrope } from "next/font/google";
 import "./globals.css";
 import ConvexClerkProvider from "../providers/ConvexClerkProvider";
 import AudioProvider from "@/providers/AudioProvider";
+import { Analytics } from "@vercel/analytics/react"
 
 const manrope = Manrope({ subsets: ["latin"] });
 
@@ -25,6 +26,7 @@ export default function RootLayout({
         <AudioProvider>
           <body className={`${manrope.className}`}>
               {children}
+              <Analytics />
           </body>
         </AudioProvider>
       </html>
